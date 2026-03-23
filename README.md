@@ -27,7 +27,7 @@ Currently expanding my skills into **web development** with HTML, CSS and JavaSc
 | Project | Description | Tech |
 |--------|-------------|------|
 | [🪙 DataStore & Leaderboard](https://github.com/selennedev/roblox-datastore-leaderboard) | Persistent player data system with real-time UI | Lua, Roblox |
-| *(more coming soon)* | | |
+| [🛒 Shop System](https://github.com/selennedev/roblox-shop-system) | Secure in-game shop with server-side validation | Lua, Roblox |
 
 ---
 
