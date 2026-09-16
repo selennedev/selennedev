@@ -1,0 +1,27 @@
+:root { --ink:#2c1e17; --espresso:#4a2c1d; --paper:#f8f4ef; --sand:#e8dfd6; --muted:#786961; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:#e9e1d8; color:var(--ink); font-family:"DM Sans",sans-serif; }
+.site-shell { max-width:680px; margin:0 auto; overflow:hidden; background:var(--paper); box-shadow:0 0 45px rgba(67,43,29,.12); }
+.availability { height:62px; display:flex; justify-content:center; align-items:center; gap:12px; background:var(--sand); text-transform:uppercase; font-size:11px; font-weight:600; letter-spacing:.17em; }
+.availability svg { width:19px; height:19px; fill:var(--ink); }
+.header { min-height:130px; padding:30px 38px; display:flex; align-items:center; justify-content:space-between; position:relative; background:var(--paper); }
+.brand { color:#111; text-decoration:none; text-align:center; text-transform:uppercase; }
+.brand span { display:block; font-family:"Playfair Display",serif; font-size:33px; letter-spacing:.17em; line-height:1; }
+.brand small { display:block; margin-top:11px; font-size:10px; letter-spacing:.57em; font-weight:600; }
+.menu-toggle { border:0; padding:4px 0; width:41px; background:transparent; cursor:pointer; display:grid; gap:7px; }
+.menu-toggle i { display:block; height:2px; background:var(--espresso); width:100%; }
+.menu { display:none; position:absolute; z-index:2; top:100px; right:27px; padding:17px 20px; gap:16px; flex-direction:column; background:var(--espresso); box-shadow:0 10px 25px rgba(50,27,16,.2); }.menu.is-open { display:flex; }.menu a { color:#fff; text-decoration:none; text-transform:uppercase; letter-spacing:.13em; font-size:10px; }
+.hero { background:var(--paper); }
+.portrait { height:min(710px, 105vw); background-image:linear-gradient(90deg,rgba(55,32,17,.09),transparent 45%), url("https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1100&q=90"); background-position:center 32%; background-size:cover; }
+.hero-copy { padding:50px 46px 57px; }
+.eyebrow { margin:0 0 20px; color:#4c3b31; text-transform:uppercase; letter-spacing:.4em; font-size:10px; font-weight:600; }
+h1 { margin:0; font-family:"DM Serif Display",serif; color:#17110f; font-size:clamp(52px,8.8vw,69px); font-weight:400; line-height:.98; letter-spacing:-.045em; }
+h1 em { color:#715c50; font-style:normal; }
+.cta { margin-top:38px; width:100%; min-height:78px; display:flex; align-items:center; justify-content:center; gap:22px; background:var(--espresso); color:white; text-decoration:none; text-transform:uppercase; letter-spacing:.1em; font-size:17px; font-weight:500; transition:background .2s, transform .2s; }
+.cta:hover { background:#321b10; transform:translateY(-2px); }.cta span { font-size:28px; line-height:0; }
+.intro { padding:84px 46px; background:#ede5dc; }.intro > p:last-child { max-width:460px; margin:0; font-family:"DM Serif Display",serif; font-size:30px; line-height:1.17; }
+.services { padding:76px 46px 84px; }.service-grid { display:grid; gap:2px; }.service-grid article { padding:25px 0; border-top:1px solid #d8cbc0; position:relative; }.service-grid article:last-child { border-bottom:1px solid #d8cbc0; }.service-grid span { color:#967b6a; font-size:11px; letter-spacing:.1em; }.service-grid h2 { margin:8px 0; font-family:"DM Serif Display",serif; font-size:34px; font-weight:400; line-height:.95; }.service-grid p { margin:0; color:var(--muted); font-size:13px; }
+footer { padding:29px 46px; display:flex; justify-content:space-between; background:var(--espresso); color:#fff; text-transform:uppercase; letter-spacing:.14em; font-size:10px; } footer a { color:#fff; }
+@media (min-width:681px) { body { padding:42px 0; } .site-shell { border-radius:5px; } }
+@media (max-width:460px) { .availability { font-size:9px; height:54px; } .header { min-height:112px; padding:25px 22px; }.brand span { font-size:25px; }.brand small { font-size:8px; letter-spacing:.45em; }.portrait { height:116vw; }.hero-copy,.intro,.services { padding-left:27px; padding-right:27px; }.hero-copy { padding-top:39px; padding-bottom:42px; }.cta { min-height:66px; font-size:14px; }.intro { padding-top:60px; padding-bottom:60px; }.intro > p:last-child { font-size:26px; } footer { padding:25px 27px; } }
